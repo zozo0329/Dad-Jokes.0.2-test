@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: #2e2e2e;
+}
+.navbar {
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1f1f1f;
+  position: relative;
+  height: 100px;
+}
+.logo h1 a {
+  font-size: 50px;
+  color: white;
+}
+.logo a:hover {
+  color: orange;
+}
+.navbar ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+.navbar a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  transition: 0.4s;
+}
+.navbar a:hover {
+  color: orange;
+}
+.menu-icon {
+  display: none;
+}
+.menu-icon i {
+  color: white;
+  font-size: 35px;
+  padding: 10px;
+}
+
+/* MQ FOR RESPONSIVE DESIGN */
+
+@media (max-width: 600px) {
+  .logo h1 a {
+    transition: 0.3s;
+  }
+  .logo h1 a:hover {
+    color: orange;
+  }
+  .navbar ul {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    text-align: center;
+    background-color: orange;
+    overflow: hidden;
+  }
+  .navbar a {
+    color: black;
+    font-size: 18px;
+    font-weight: 800;
+    transition: 0.3s;
+  }
+  .navbar ul li {
+    padding: 20px;
+  }
+  .menu-icon {
+    display: block;
+  }
+  #menuList {
+    transition: all 0.5s;
+  }
+  .navbar a:hover {
+    color: white;
+  }
+  .menu-icon i {
+    transition: 0.3s;
+  }
+  .menu-icon i:hover {
+    color: orange;
+  }
+}
