@@ -148,7 +148,11 @@ body {
   .menu-icon i:hover {
     color: orange;
   }
-  /* MAIN SECTION */
+  /*
+
+          MAIN SECTION
+  
+  */
   .title-section {
     display: flex;
     justify-content: center;
@@ -167,5 +171,6 @@ body {
   }
   .description-items h1 {
     text-align: center;
+    font-size: 50px;
   }
 }
