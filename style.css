@@ -174,3 +174,70 @@ body {
     font-size: 50px;
   }
 }
+@media (max-width: 950px) {
+  .logo h1 a {
+    transition: 0.3s;
+  }
+  .logo h1 a:hover {
+    color: orange;
+  }
+  .navbar ul {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    text-align: center;
+    background-color: #ffa600be;
+    overflow: hidden;
+  }
+  .navbar a {
+    color: rgb(255, 255, 255);
+    font-size: 21px;
+    font-weight: 800;
+    transition: 0.3s;
+  }
+  .navbar ul li {
+    padding: 20px;
+  }
+  .menu-icon {
+    display: block;
+  }
+  #menuList {
+    transition: all 0.5s;
+  }
+  .navbar a:hover {
+    color: rgb(0, 0, 0);
+  }
+  .menu-icon i {
+    transition: 0.3s;
+  }
+  .menu-icon i:hover {
+    color: orange;
+  }
+  /*
+
+          MAIN SECTION
+  
+  */
+  .title-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+  }
+  .title h1 {
+    font-size: 50px;
+    padding: 10px 5px 10px 5px;
+  }
+  .description-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+  .description-items h1 {
+    text-align: center;
+    font-size: 50px;
+  }
+}
