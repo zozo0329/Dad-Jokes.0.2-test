@@ -10,6 +10,8 @@ body {
   height: 100%;
   background: #2e2e2e;
 }
+
+/* NAVBAR SECTION  */
 .navbar {
   padding: 10px 30px;
   display: flex;
@@ -40,6 +42,7 @@ body {
 .navbar a:hover {
   color: orange;
 }
+/* THIS IS THE ICON IN UPPER RIGHT SIDE */
 .menu-icon {
   display: none;
 }
@@ -47,6 +50,31 @@ body {
   color: white;
   font-size: 35px;
   padding: 10px;
+}
+/*
+    MAIN SECTION
+*/
+.main-section {
+  background-image: url(images/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+  background-color: white;
+}
+.title h1 {
+  padding: 40px;
+  font-family: Sixtyfour;
+  color: rgb(0, 0, 0);
+  background-color: #ffffff62;
+  font-size: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
 }
 
 /* MQ FOR RESPONSIVE DESIGN */
@@ -65,12 +93,12 @@ body {
     right: 0;
     flex-direction: column;
     text-align: center;
-    background-color: orange;
+    background-color: #ffa600be;
     overflow: hidden;
   }
   .navbar a {
     color: black;
-    font-size: 18px;
+    font-size: 21px;
     font-weight: 800;
     transition: 0.3s;
   }
@@ -91,5 +119,17 @@ body {
   }
   .menu-icon i:hover {
     color: orange;
+  }
+  /* MAIN SECTION */
+  .main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+  }
+  .title h1 {
+    font-size: 50px;
+    padding: 10px 5px 10px 5px;
   }
 }
