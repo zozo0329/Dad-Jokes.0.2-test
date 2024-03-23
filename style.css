@@ -146,6 +146,9 @@ body {
   background-color: black;
   border-radius: 20px;
 }
+.main-section p {
+  font-weight: bold;
+}
 .main-section button {
   cursor: pointer;
   padding: 15px 40px 15px 40px;
@@ -160,6 +163,26 @@ body {
 .main-section button:hover {
   background-color: white;
   color: black;
+}
+.bottom-section {
+  padding: 50px;
+}
+.bottom-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: orange;
+  gap: 50px;
+  padding: 50px;
+  border-radius: 20px;
+}
+.bottom-description img {
+  height: 250px;
+  width: 250px;
+}
+.bottom-description p {
+  font-weight: bold;
+  font-size: 20px;
 }
 
 /* MQ FOR RESPONSIVE DESIGN */
@@ -242,6 +265,13 @@ body {
   p {
     text-align: center;
   }
+  /* 
+    BOTTOM SECTION
+  */
+  .bottom-description {
+    display: flex;
+    flex-direction: column;
+  }
 }
 @media (max-width: 950px) {
   .logo h1 a {
@@ -320,5 +350,12 @@ body {
   .main-section h1,
   p {
     text-align: center;
+  }
+  /* 
+    BOTTOM SECTION
+  */
+  .bottom-description {
+    display: flex;
+    flex-direction: column;
   }
 }
