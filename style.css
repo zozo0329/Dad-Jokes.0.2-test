@@ -146,6 +146,21 @@ body {
   background-color: black;
   border-radius: 20px;
 }
+.main-section button {
+  cursor: pointer;
+  padding: 15px 40px 15px 40px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 30px;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  transition: 0.4s;
+}
+.main-section button:hover {
+  background-color: white;
+  color: black;
+}
 
 /* MQ FOR RESPONSIVE DESIGN */
 

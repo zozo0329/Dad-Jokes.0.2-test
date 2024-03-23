@@ -8,3 +8,16 @@ function toggleMenu() {
     menuList.style.maxHeight = "0px";
   }
 }
+
+let par = document.getElementById("parTextOne");
+let parTwo = document.getElementById("parTextTwo");
+let parThree = document.getElementById("parTextThree");
+function buttonOne() {
+  par.innerText = "But I'm clean now";
+}
+function buttonTwo() {
+  parTwo.innerText = "Then it's a soap opera.";
+}
+function buttonThree() {
+  parThree.innerText = "and solve your own problems";
+}
