@@ -29,6 +29,10 @@ body {
 .logo a:hover {
   color: orange;
 }
+.logo a:active {
+  opacity: 0.7;
+  transition: 0.25s;
+}
 .navbar ul {
   display: flex;
   gap: 30px;
@@ -42,6 +46,10 @@ body {
 }
 .navbar a:hover {
   color: orange;
+}
+.navbar a:active {
+  opacity: 0.7;
+  transition: 0.25s;
 }
 /* THIS IS THE ICON IN UPPER RIGHT SIDE */
 .menu-icon {
@@ -155,15 +163,24 @@ body {
   font-size: 20px;
   font-weight: bold;
   border-radius: 30px;
-  background-color: black;
+  background-color: #3b3b3b;
   color: white;
   border: 1px solid white;
   transition: 0.4s;
+  border: none;
 }
 .main-section button:hover {
   background-color: white;
   color: black;
 }
+.main-section button:active {
+  background-color: orange;
+  transition: 0.25s;
+}
+
+/* 
+  BOTTOM SECTION
+*/
 .bottom-section {
   padding: 50px;
 }
@@ -187,9 +204,79 @@ body {
 /* 
   FOOTER SECTION
 */
+.footer-section {
+  display: flex;
+  justify-content: center;
+  gap: 300px;
+  background-color: black;
+  color: white;
+  padding: 50px;
+}
+.footer-section h1 {
+  color: #363636;
+  font-family: monospace;
+  font-size: 40px;
+}
+/* SOCIALS */
 
+.social-title h1 {
+  margin: 0px 0px 50px 0px;
+}
+.footer-icons {
+  display: flex;
+  gap: 30px;
+}
+
+.footer-icons a {
+  color: white;
+  transition: 0.4s;
+}
+.footer-icons a:hover {
+  color: orange;
+}
+.footer-icons a:active {
+  opacity: 0.7;
+  transition: 0.25s;
+}
+/* 
+    HELP 
+*/
+.help h1 {
+  margin: 0px 0px 50px 0px;
+}
+.help-items ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+  padding: 0px;
+}
+.help-items a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.4s;
+}
+.help-items a:hover {
+  color: orange;
+}
+.help-items a:active {
+  opacity: 0.7;
+  transition: 0.25s;
+}
+/*
+    COPYRIGHTS
+*/
+.copyrights {
+  color: white;
+  background-color: black;
+  text-align: end;
+  padding: 50px;
+  font-weight: bold;
+  font-size: 12px;
+}
 /* MQ FOR RESPONSIVE DESIGN */
-
 @media (max-width: 600px) {
   .logo h1 a {
     transition: 0.3s;
@@ -274,6 +361,16 @@ body {
   .bottom-description {
     display: flex;
     flex-direction: column;
+  }
+  /* 
+    FOOTER SECTION
+  */
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    padding: 100;
   }
 }
 @media (max-width: 950px) {
@@ -360,5 +457,16 @@ body {
   .bottom-description {
     display: flex;
     flex-direction: column;
+  }
+
+  /* 
+    FOOTER SECTION
+  */
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    padding: 100;
   }
 }
