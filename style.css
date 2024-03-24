@@ -371,6 +371,7 @@ body {
     align-items: center;
     gap: 100px;
     padding: 100;
+    text-align: center;
   }
 }
 @media (max-width: 950px) {
@@ -468,5 +469,6 @@ body {
     align-items: center;
     gap: 100px;
     padding: 100;
+    text-align: center;
   }
 }
