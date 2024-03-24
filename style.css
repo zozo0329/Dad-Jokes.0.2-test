@@ -184,6 +184,27 @@ body {
   font-weight: bold;
   font-size: 20px;
 }
+/* 
+  FOOTER SECTION
+*/
+
+.footer-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background-color: #363636;
+}
+.footer-items h1 {
+  color: white;
+  font-size: 60px;
+  padding: 30px;
+}
+.footer-icons {
+  display: flex;
+  gap: 20px;
+}
 
 /* MQ FOR RESPONSIVE DESIGN */
 
